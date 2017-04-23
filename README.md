@@ -1,3 +1,5 @@
+.NET Standard fork of https://github.com/alkozko/NHyphenator
+
 NHyphenator
 ===========
 C# implementation of Frank Liang's hyphenation algorithm (also known as Knuth-Liang algorithm) 
@@ -7,7 +9,7 @@ This implementation contains original TEX hyphenation patterns (see http://tug.o
 
 NuGet
 ===============
-https://www.nuget.org/packages/NHyphenator/
+https://www.nuget.org/packages/NHyphenator.Core/1.0.0
 
 Example
 ===============
