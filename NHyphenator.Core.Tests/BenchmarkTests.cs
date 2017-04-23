@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace NHyphenator.Tests
 {
-	[Ignore]
+	//[Ignore]
 	public class BenchmarkTests
 	{
 		[Test]

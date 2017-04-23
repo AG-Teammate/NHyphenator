@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using NHyphenator.Core.Properties;
 
 namespace NHyphenator
 {
@@ -42,13 +43,13 @@ namespace NHyphenator
 			switch (language)
 			{
 				case HyphenatePatternsLanguage.EnglishUs:
-					CreatePatterns(Patterns.hyph_en_us_pat, Patterns.hyph_en_us_hyp);
+					CreatePatterns(Resources.hyph_en_us_pat, Resources.hyph_en_us_hyp);
 					break;
 				case HyphenatePatternsLanguage.EnglishBritish:
-					CreatePatterns(Patterns.hyph_en_gb_pat, Patterns.hyph_en_us_hyp);
+					CreatePatterns(Resources.hyph_en_gb_pat, Resources.hyph_en_us_hyp);
 					break;
 				case HyphenatePatternsLanguage.Russian:
-					CreatePatterns(Patterns.hyph_ru_pat, Patterns.hyph_ru_hyp);
+					CreatePatterns(Resources.hyph_ru_pat, Resources.hyph_ru_hyp);
 					break;
 				default:
 					throw new ArgumentOutOfRangeException("language");
@@ -222,8 +223,8 @@ namespace NHyphenator
 			{
 				if (Char.IsDigit(c))
 				{
-					levels.Add(Int32.Parse(c.ToString(CultureInfo.InvariantCulture)));
-					waitDigit = false;
+					levels.Add(Int32.Parse(c.ToString())); //AG: levels.Add(Int32.Parse(c.ToString(CultureInfo.InvariantCulture)));
+                    waitDigit = false;
 				}
 				else
 				{
