@@ -51,7 +51,13 @@ namespace NHyphenator
 				case HyphenatePatternsLanguage.Russian:
 					CreatePatterns(Resources.hyph_ru_pat, Resources.hyph_ru_hyp);
 					break;
-				default:
+                case HyphenatePatternsLanguage.German:
+                    CreatePatterns(Resources.hyph_de_pat, Resources.hyph_de_hyp);
+                    break;
+                case HyphenatePatternsLanguage.Spanish:
+                    CreatePatterns(Resources.hyph_es_pat, Resources.hyph_es_hyp);
+                    break;
+                default:
 					throw new ArgumentOutOfRangeException("language");
 			}
 		}
@@ -139,10 +145,13 @@ namespace NHyphenator
 
 		private void CorrectMask(int[] hyphenationMask)
 		{
+            if (minLetterCount == 0)
+                return;
+
 			if (hyphenationMask.Length > minLetterCount)
 			{
 				Array.Clear(hyphenationMask, 0, minLetterCount);
-				Array.Clear(hyphenationMask, hyphenationMask.Length - minLetterCount, minLetterCount);
+				Array.Clear(hyphenationMask, hyphenationMask.Length - minLetterCount + 1, minLetterCount - 1);
 			}
 			else
 				Array.Clear(hyphenationMask, 0, hyphenationMask.Length);
@@ -246,6 +255,8 @@ namespace NHyphenator
 	{
 		EnglishUs,
 		EnglishBritish,
-		Russian
+		Russian,
+        German,
+        Spanish
 	}
 }
