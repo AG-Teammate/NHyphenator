@@ -62,6 +62,97 @@ namespace NHyphenator.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string hyph_de_hyp {
+            get {
+                return ResourceManager.GetString("hyph_de_hyp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .ab1a
+        ///.ab3l
+        ///.abo2
+        ///.ab3ol
+        ///.ab1or
+        ///.ab3s2
+        ///.ab3u
+        ///.ade3n
+        ///.ae3
+        ///.aft2
+        ///.ag2a
+        ///.ag4r
+        ///.ag2u
+        ///.ai2s
+        ///.akt2a
+        ///.al2e
+        ///.al3k
+        ///.al3lei
+        ///.al5len
+        ///.al3se
+        ///.al4tei
+        ///.alter6s5
+        ///.alt1s
+        ///.al2tu
+        ///.ampe4
+        ///.amt2s
+        ///.ana1c
+        ///.an3d2
+        ///.anden6k
+        ///.and4ri
+        ///.an1er
+        ///.ang2
+        ///.an3gli
+        ///.ang4s2
+        ///.angst3
+        ///.ani2s
+        ///.an3k4
+        ///.an3na
+        ///.an3s2
+        ///.an4si.
+        ///.an3z2
+        ///.aos4
+        ///.ap5p6le.
+        ///.aps2
+        ///.ari1e
+        ///.ar3k2a
+        ///.ar4m3ac
+        ///.ar4mun
+        ///.ar2sc
+        ///.ar4tan
+        ///.ar4t3ei
+        ///.arter4
+        ///.ar6t5erh
+        ///.ar2tr
+        ///.arz2
+        ///.as6sest
+        ///.as2t
+        ///.ata1
+        ///.ate2
+        ///.at4h
+        ///.au3d
+        ///.aue2
+        ///.au4f3
+        ///.aufs2
+        ///.au2s1
+        ///.au6stes
+        ///.auß2
+        ///.ax2
+        ///.äm3
+        ///.är6schl
+        ///.ät2h
+        ///.ät2s
+        ///.äu3
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string hyph_de_pat {
+            get {
+                return ResourceManager.GetString("hyph_de_pat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to uni-ver-sity
         ///uni-ver-sit-ies
         ///how-ever
@@ -246,6 +337,29 @@ namespace NHyphenator.Core.Properties {
         internal static string hyph_en_us_pat {
             get {
                 return ResourceManager.GetString("hyph_en_us_pat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string hyph_es_hyp {
+            get {
+                return ResourceManager.GetString("hyph_es_hyp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1b 4b. .b2 2bb 2bc 2bd 2bf 2bg 2b1h 2bj 2bk     2bm 2bn 2bp 2bq     2bs 2bt 2bv 2bw 2bx 2by 2bz
+        ///1c 4c. .c2 2cb 2cc 2cd 2cf 2cg     2cj 2ck     2cm 2cn 2cp 2cq     2cs 2ct 2cv 2cw 2cx 2cy 2cz
+        ///1d 4d. .d2 2db 2dc 2dd 2df 2dg 2d1h 2dj 2dk 2dl 2dm 2dn 2dp 2dq     2ds 2dt 2dv 2dw 2dx 2dy 2dz
+        ///1f 4f. .f2 2fb 2fc 2fd 2ff 2fg 2f1h 2fj 2fk     2fm 2fn 2fp 2fq     2fs 2ft 2fv 2fw 2fx 2fy 2fz
+        ///1g 4g. .g2 2gb 2gc 2gd 2gf 2gg 2g1h 2gj 2gk     2gm 2gn 2gp 2gq     2gs 2gt 2gv 2gw 2gx 2gy 2gz
+        ///   4h. 2hb 2hc 2hd 2hf 2hg 2h1h 2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string hyph_es_pat {
+            get {
+                return ResourceManager.GetString("hyph_es_pat", resourceCulture);
             }
         }
         

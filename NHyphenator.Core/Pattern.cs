@@ -38,10 +38,8 @@ namespace NHyphenator
 			int minSize = first ? x.str.Length : y.str.Length;
 			for (var i = 0; i < minSize; ++i)
 			{
-				if (x.str[i] < y.str[i])
-					return -1;
-				if (x.str[i] > y.str[i])
-					return 1;
+                if (x.str[i] != y.str[i])
+                    return string.Compare(x.str[i].ToString(), y.str[i].ToString());
 			}
 			return first ? -1 : 1;
 		}
