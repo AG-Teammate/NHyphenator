@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
+    <PackageId>NHyphenator.Core</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>alkozko</Authors>
+    <Description>C# implementation of Frank Liang's hyphenation algorithm (also known as Knuth-Liang algorithm)</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Added German and Spanish</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
